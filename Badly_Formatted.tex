@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm} %mathematic packages
+
+
+\title{Badly Formatted Mathematics}
+\author{Arman Daneshdoost}
+\date{February 2024}
+
+\begin{document}
+	\maketitle
+	Remember that \[f(z) = f(re^{i\theta}) = r\cos(\theta) + ir\sin(\theta) = re^{i\theta} = z\]
+	is too long to be inline-math.
+	\\
+	Here it would be nice to have some more space:
+	\[\frac{x+6}{x-1} = 1\qquad \forall x\neq1.\]
+	\\
+	Here is an equation that does not look very nice:
+	\begin{multline*}
+		f(x) = (5x + 6x^5 + \cos(x) + \sin(8x) + \tan(3x+7)+e^x)\Bigg(\int_{0}^{1}(3x+8)\cos(x)\,dx + \\
+		 \frac{4x-8}{3} +\lim_{x\to3}\frac{x-3}{\sqrt{x} - \sqrt{3}}\Bigg)
+	\end{multline*}
+\end{document}

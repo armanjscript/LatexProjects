@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm} %mathematic packages
+
+
+\title{Writing Beautiful Mathematics 2}
+\author{Arman Daneshdoost}
+\date{February 2024}
+
+\begin{document}
+	\maketitle
+	$\sum_{n=0}^{\infty}\frac{1}{n^2 + 1}$
+	\[\sum_{n=0}^{\infty}\frac{1}{n^2 + 1}\]
+	$\int_{0}^1x^2dx$
+	\[\int_{0}^1x^2dx\]
+	$\iint_Sx^2+ydxdy$
+	\\
+	$\iiint_Sx^2+ydxdydz$
+	\\
+	$\lim_{x \to 1}x$
+	\[\lim_{x \to 1}x\]
+	\\
+	$\max_{n\in \{1, 2, 3\}}n, $
+	\begin{multline}\label{multline-env} %for multiple lines equations and * for removing the reference number
+		f(x) = 3 +3x + 4x^2 + 3x^3 + 5x^4 + 6x^5 + 5x^6 + 6x^7 + 4x^8 + 3 +3x + 4x^2 + 3x^3 + 5x^4 +  6x^5 + 5x^6 +
+		\\
+		 6x^7 + 4x^8 +3 +3x + 4x^2 + 3x^3 + 5x^4 + 6x^5 + 5x^6 + 6x^7 +
+		 \\
+		  4x^8 + 3 +3x + 4x^2 + 3x^3 + 5x^4 + 6x^5 + 5x^6 + 6x^7 + 4x^8
+	\end{multline}
+	\begin{align}\label{align-env}
+		3x+2y+5z&=4 & 7y+8z+9w&=13 \\
+		11x+9y-4z&=17 & 2z+5y-7w&=8 \notag %equations in this line without number
+	\end{align}
+	\eqref{align-env} and \eqref{multline-env}
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath} %for referencing by \eqref
+\usepackage{hyperref}
+
+
+\title{Intro to References and Links}
+\author{Arman Daneshdoost}
+\date{February 2024}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\section{LaTex} \label{Latex-section}
+	LaTex is an amazing software for typesetting. A second degree polynomial is on the form
+	\begin{equation} \label{polynomial_equation}  %referencing the equation
+		ax^{2} + bx + c.
+	\end{equation}
+	You can find more information on \href{www.overleaf.com}{Overleaf}. % \url{www.overleaf.com} 
+	\section{Writing by Hand}
+	This is self-explanatory.
+	\newpage %the content after that go to new page
+	\section{Microsoft Word}
+	Unlike LaTex discussed in Section \ref{Latex-section}, word is more user friendly. You can learn more about LaTex on page
+	\pageref{Latex-section}. Equation such as \eqref{polynomial_equation} is not nice in Word.
+		
+\end{document}

@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+
+\title{Tables}
+\author{Arman Daneshdoost}
+\date{February 2024}
+
+\begin{document}
+	\maketitle
+	Some Text above
+	\begin{table}[h] %for centering and make form to table  - and below text by [h] - [t] on top in another page - [t!] on top in current page - [b] below on another page
+		\centering %centering table
+	\begin{tabular}{|r| c |l|} %Three columns - (right center left)
+		\hline
+		First Column & Second Column & Third Column\\ \hline\hline % for second row
+		Second Row & Second Row & Second Row
+	\end{tabular}
+	\caption{Here is my table}
+	\end{table}
+	Some text below
+\end{document}

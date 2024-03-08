@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} %package for graphics and images
+ %\graphicspath{{./pictures/}} for the path that images saved in
+ \usepackage{wrapfig} %package for wrapping figs in text
+ \usepackage{comment}
+
+\title{Including Graphics}
+\author{Arman Daneshdoost}
+\date{February 2024}
+
+\begin{document}
+\maketitle
+\listoffigures %list of figures
+\listoftables %list of tables
+Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. 
+Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. 
+	\begin{wrapfigure}{l}{0.5\textwidth} %figure on left with space of 0.5 of text width
+	\includegraphics[width=0.5\textwidth]{example_graph.png}
+	\caption{Here is a text}
+	\end{wrapfigure}
+	\begin{comment}
+		\begin{figure}[h!]
+		\centering
+		\caption{Here is a caption} %caption on top
+		\includegraphics[width=0.5\textwidth]{example_graph.png} %for scale [scale = 0.9] or [width=0.5\textwidth] or [width=12cm] or [width=\textwidth]
+		%\caption{Here is a caption} - caption on below
+		\end{figure}
+	\end{comment}
+Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. 
+Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. Here is a lot of text. 
+\end{document}
