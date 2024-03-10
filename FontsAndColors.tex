@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{calligra} %calligra fonts
+\usepackage{uncial} %uncial fonts
+\usepackage[T1]{fontenc} %new fonts setting
+\usepackage[scaled]{beramono} %resets the monospace font in the document. 
+\usepackage[dvipsnames]{xcolor} %set color for texts.
+
+\definecolor{mynewcolor}{RGB}{187, 42, 97} %create your custom color - RGB format (0-255 for each R, G and B)
+\definecolor{nextcolor}{HTML}{665544} %Hex color 
+
+\title{{\calligra Fonts and Colors}}
+\author{{\unclfamily Arman Daneshdoost}}
+\date{March 2024}
+
+\begin{document}
+	\maketitle
+	
+	\section* {\color{red} \underline{Manipulating Text}}
+	
+	{\small Here} is {\color{blue} some} \textbf{text} that can be manipulated.\\
+	\textcolor{mynewcolor}{Here} is {\color{OliveGreen} some} \textit{text} that can be {\sffamily manipulated}. \\ %serif family - sffamily
+	{\huge Here} is \textcolor{nextcolor}{some} \underline{text} that can be {\ttfamily manipulated}. %monospace family
+	
+	\section*{Paragraph}
+	This is my text for paragraph. 	This is my text for paragraph. 	This is my text for paragraph. 	This is my text for paragraph. 
+	This is my text for paragraph. 	This is my text for paragraph. 	This is my text for paragraph. 	This is my text for paragraph. 
+	This is my text for paragraph. 	This is my text for paragraph. 	This is my text for paragraph. 
+\end{document}
