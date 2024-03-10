@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amsthm}
+\theoremstyle{plain} %style for theorems
+\newtheorem{theorem}{Theorem}[section] %specifiy theorem environment and its name - by [section] gets the section number prefix
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition} %another theorem environment and its name - by [theorem] the numbering start from theorem with number 1
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+\title{Theorems}
+\author{Arman Daneshdoost}
+\date{March 2024}
+
+\begin{document}
+	\maketitle
+	
+	\section{Introduction}
+	\begin{theorem}[Name of theorem]
+		This is a theorem.
+	\end{theorem}
+	\begin{definition}
+		This is a definition.
+	\end{definition}
+	\begin{remark}
+		This is a remark.
+	\end{remark}
+	\section{Math Basics}
+	\begin{proof}
+		This is a proof. s
+	\end{proof}
+\end{document}
