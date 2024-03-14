@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+
+\title{Citing References}
+\author{Arman Daneshdoost}
+\date{March 2024}
+
+\begin{document}
+	\maketitle
+	A good fairy tale can be found in \cite{andersen}. 
+	A good book is the following \cite{shelley}.
+	
+	\cite[p.~37]{shelley} %reference 2 on page 37
+	\cite{shelley, andersen} %two references
+	
+	\vspace{1cm}
+	\begin{thebibliography}{2} %maximum reference for each item (word or sentence) - referencing by thebibliography
+		\bibitem{andersen}
+		H. C. Andersen. \textit{The little Mermaid}. 1837.
+		\bibitem{shelley}
+		M. Shelley. \textit{Frankstein}. Oxford University Press, 1818.
+	\end{thebibliography}
+		
+		[An37] H. C. Andersen. \textit{The little Mermaid}. 1837. %naive referencing
+		
+		[Sh18] M. Shelley. \textit{Frankstein}. Oxford University Press, 1818. %naive referencing
+\end{document}
