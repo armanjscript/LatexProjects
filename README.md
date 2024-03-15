@@ -1,3 +1,3 @@
-# $${\color{lightgreen}Latex Projects and Templates}$$
+# $${\color{#EE1075}Latex \ Projects \ and \ Templates}$$
 
-The repository includes all the templates and projects that are related to LaTex.
+$$\Large{The \ repository \ includes \ all \ the \ templates \ and \ projects \ that \ are \ related \ to \ LaTex.}$$
