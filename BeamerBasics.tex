@@ -1,0 +1,35 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usetheme{Bergen} %other style: Hannover
+\usecolortheme{fly} %other color theme: beetle
+
+\title{Beamer Basics}
+\author{Arman Daneshdoost}
+\date{March 2024}
+\institute{A University}
+
+\begin{document}
+	\maketitle % we can use \frame{\titlepage}
+	
+	\begin{frame}{Content}
+		\tableofcontents
+	\end{frame}
+
+	\section{Introduction}
+	\begin{frame}{Title}
+		\begin{block}{Theme}
+			Here are different things \alert{related}
+		\end{block}\pause
+		\begin{alertblock}{Important Information}
+			Here are important stuffs.
+		\end{alertblock}\pause
+		\begin{example}[First Example]
+			This is an example.
+		\end{example}\pause
+		Some more text
+	\end{frame}
+	\section{Second section}
+	\begin{frame}{Title}
+		Some more text
+	\end{frame}
+\end{document}
