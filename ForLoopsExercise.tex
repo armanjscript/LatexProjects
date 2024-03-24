@@ -1,0 +1,20 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz} %package for plots, graphics and functions
+
+\title{For Loops Exercise}
+\author{Arman Daneshdoost}
+\date{March 2024}
+
+\begin{document}
+	\maketitle
+	\begin{tikzpicture}
+		\draw [ <->] (0, 10.2) -- (0, 0) -- (10.2, 0);
+		\foreach \x in {1,...,10}{
+			\draw[ultra thin] (\x, 0) -- (\x, -0.1)
+			node [below] {$\x$};
+				\draw[ultra thin] (0, \x) -- (-0.1, \x)
+			node [left] {$\x$};
+		}
+	\end{tikzpicture}
+\end{document}
