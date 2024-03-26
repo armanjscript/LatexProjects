@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyvrb}
+\usepackage{subfiles}
+
+\title{Further Topics}
+\author{Arman Daneshdoost}
+\date{March 2024}
+
+\begin{document}
+	\maketitle
+	
+	\section{Introduction}
+	You can type $\frac{1}{2}$ with  \verb+\frac{1}{2}+ in LaTex. %presenting codes and commands with \verb in LaTex.
+	\\
+	for writing for-loop in Python, You would:
+\begin{Verbatim}[tabsize = 4]
+for num in range(1, 40):
+	print(num ** 2)
+\end{Verbatim}
+
+\subfile{Section1} %multiple files - if you have directory of files, you can access them. ex: Sections/Section1
+
+\end{document}
